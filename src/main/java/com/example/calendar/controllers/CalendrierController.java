@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/calendriers")
+@RequestMapping("/api/calendriers") // routes
 public class CalendrierController {
 
     private final CalendrierService calendrierService;
 
-    @Autowired
+    @Autowired //injection auto des deps
     public CalendrierController(CalendrierService calendrierService) {
         this.calendrierService = calendrierService;
     }
